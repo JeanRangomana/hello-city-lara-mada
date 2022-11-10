@@ -11,8 +11,8 @@
     <body >
         <h1>hello from MADA  </h1>
 
-        <p>It's currently {{  date('H:i A')}}</p>
+        <p>It's currently {{  date('H:i A')}} </p>
 
-        <footer><p>&copy; copyrigth {{  date('Y')}}  &middot;<a href="#">About Us</a></p></footer>
+        <footer><p>&copy; copyrigth {{  date('Y')}}  &middot;<a href="/about-us">About Us</a></p></footer>
     </body>
 </html>
