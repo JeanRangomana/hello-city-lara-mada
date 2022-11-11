@@ -7,14 +7,13 @@
 
 
 @section('content')
+        <img src="/images/avatar.png" alt="avatar" >
 
         <p>Build with &hearts; by les teachers du net </p>
 
-        @if(Route ::is('about'))
-             <p><a href="{{route('home')}}">Revenir à la page d'accueil</a></p>
-        @endif
-
        
+
+        <p> <a href="{{route('home')}}">Revenir à la page d'accueil</a></p>
 
         
 @endsection
