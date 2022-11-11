@@ -1,31 +1,32 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="{{str_replace('_','-',app()->getLocale()) }}">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+
 	<title>@yield('title',config('app.name'))</title>
 </head>
-<body>
+<body class="py-8 flex flex-col justify-between items-center min-h-screen">
 
 
-      @yield('content')
-    
+   <main role="main" class="flex flex-col justify-center  items-center">
+         @yield('content')
+   </main>
      
- 
-
         <footer>
-        <p>
+        <p class="text-gray-400">
         	&copy; Copyright {{date('Y')}}
 
         	 @if(!Route ::is('about'))
-                    &middot; <a href="{{route('about')}}">About Us</a>
+                    &middot; <a href="{{route('about')}}" class="text-indigo-500 hover:text-indigo-600 underline">About Us</a>
 
              @endif
         	
         </p>
         
          </footer> 
-
 
 </body>
 </html>

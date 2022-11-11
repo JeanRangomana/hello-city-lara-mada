@@ -7,13 +7,16 @@
 
 
 @section('content')
-        <img src="/images/avatar.png" alt="avatar" >
+        <img src="{{asset('/images/avatar.png')}}" alt="avatar" class="my-12 rounded-full shadow-md h-32">
 
-        <p>Build with &hearts; by les teachers du net </p>
+        <h2 class=" mb-5 text-gray-700"> 
+                Build with <span class="text-pink-500"> &hearts;</span> by LE BILAL 
+        </h2>
 
        
 
-        <p> <a href="{{route('home')}}">Revenir à la page d'accueil</a></p>
-
+        <p> 
+                <a href="{{route('home')}}"  class="text-indigo-500 hover:text-indigo-600 underline">Revenir à la page d'accueil</a>
+        </p>
         
 @endsection
