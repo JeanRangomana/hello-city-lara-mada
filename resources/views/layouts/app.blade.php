@@ -6,7 +6,7 @@
     <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
-	<title>@yield('title',config('app.name'))</title>
+	<title> {{isset($title) ? $title .'|'. config('app.name') : config('app.name') }} </title>
 </head>
 <body class="py-8 flex flex-col justify-between items-center min-h-screen">
 
